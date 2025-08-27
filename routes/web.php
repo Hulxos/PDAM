@@ -29,3 +29,9 @@ route::get('/daftarkaryawan', function () {
 Route::get('/karyawan/edit', function () {
     return view('karyawan/EditKaryawan');
 });
+
+// Pelanggan
+
+route::get('/pelanggan', function () {
+    return view('pelanggan/Pelanggan');
+});
