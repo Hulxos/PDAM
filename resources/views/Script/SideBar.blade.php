@@ -119,6 +119,8 @@
                 </details>
             </li>
 
+            {{-- Sambungan --}}
+
             @php
                 $isSambunganActive = request()->is('sambungan') || request()->is('');
             @endphp
@@ -147,6 +149,49 @@
                             class="flex items-center w-full p-2 rounded-lg pl-11 font-semibold transition-colors duration-200
                             {{ request()->is('sambungan') ? 'text-blue-900' : 'text-[#4B4B5A] hover:text-blue-900' }}">
                                 Daftar Permohonan Sambungan
+                            </a>
+                        </li>
+                        {{-- <li>
+                            <a href="/ (ROUTE)"
+                            class="flex items-center w-full p-2 rounded-lg pl-11 font-semibold
+                            {{ request()->is('(masukan nama route/path)') ? 'text-blue-900' : 'text-[#4B4B5A] hover:text-blue-900' }}">
+                                (NAMA KOLOM KE-2)
+                            </a>
+                        </li> --}}
+                    </ul>
+                </details>
+            </li>
+
+            {{-- Pelanggan --}}
+
+            @php
+                $isPelangganActive = request()->is('pelanggan') || request()->is('');
+            @endphp
+
+            <li>
+                <details class="group" {{ $isPelangganActive ? 'open' : '' }}>
+                    <summary class="flex items-center w-full p-2 text-base rounded-lg cursor-pointer transition-colors duration-200
+                        {{ $isPelangganActive ? 'text-white bg-blue-900' : 'text-[#4B4B5A] hover:text-white hover:bg-blue-900' }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 w-5 h-5 {{ $isPelangganActive ? 'text-white' : '' }} transition duration-75"
+                            viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <g fill="none" fill-rule="evenodd">
+                                <path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/>
+                                <path fill="currentColor" d="M12 4a2 2 0 0 0-2 2h4a2 2 0 0 0-2-2ZM9.354 3c.705-.622 1.632-1 2.646-1s1.94.378 2.646 1H18a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.354ZM8.126 5H6v15h12V5h-2.126c.082.32.126.655.126 1v1a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V6c0-.345.044-.68.126-1ZM8 11a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1Zm0 4a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1Z"/>
+                            </g>
+                        </svg>
+                        <a href="/pelanggan" class="flex-1 ms-3 text-left whitespace-nowrap font-semibold">Pelanggan</a>
+                        <svg class="w-3 h-3 ms-auto transition-transform duration-300 group-open:rotate-180 {{ $isPelangganActive ? 'text-white' : '' }}"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg>
+                    </summary>
+                    <ul class="py-2 space-y-2 rounded-lg mt-1">
+                        <li>
+                            <a href="/pelanggan"
+                            class="flex items-center w-full p-2 rounded-lg pl-11 font-semibold transition-colors duration-200
+                            {{ request()->is('pelanggan') ? 'text-blue-900' : 'text-[#4B4B5A] hover:text-blue-900' }}">
+                                Daftar Pengguna
                             </a>
                         </li>
                         {{-- <li>

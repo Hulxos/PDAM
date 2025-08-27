@@ -7,7 +7,7 @@
 {{-- <---Code---> --}}
 
     <div class="p-2 sm:p-4">
-        <p class="text-[#4B4B5A] font-bold text-xl sm:text-2xl">Edit Karyawan</p>
+        <p class="text-[#4B4B5A] font-semibold text-xl sm:text-2xl">Edit Karyawan</p>
 
         <!-- Back Button -->
         <button class="inline-flex items-center justify-center bg-green-400 rounded-full w-8 h-8 sm:w-10 sm:h-10 mt-4">
@@ -27,21 +27,21 @@
                 <div>
                     <label class="block text-gray-700 font-medium mb-1 text-sm sm:text-base">Nama Karyawan</label>
                     <input type="text" placeholder="Masukkan Nama Karyawan..."
-                           class="w-full border rounded-md p-2 sm:p-3 focus:ring focus:ring-green-300 text-sm sm:text-base"/>
+                        class="w-full border rounded-md p-2 sm:p-3 focus:ring focus:ring-green-300 text-sm sm:text-base"/>
                 </div>
 
                 <!-- NIK -->
                 <div>
                     <label class="block text-gray-700 font-medium mb-1 text-sm sm:text-base">NIK</label>
                     <input type="text" placeholder="Masukkan NIK..."
-                           class="w-full border rounded-md p-2 sm:p-3 focus:ring focus:ring-green-300 text-sm sm:text-base"/>
+                        class="w-full border rounded-md p-2 sm:p-3 focus:ring focus:ring-green-300 text-sm sm:text-base"/>
                 </div>
 
                 <!-- Nomor Telepon -->
                 <div>
                     <label class="block text-gray-700 font-medium mb-1 text-sm sm:text-base">Nomor Telepon</label>
                     <input type="text" placeholder="Masukkan Nomor Telepon..."
-                           class="w-full border rounded-md p-2 sm:p-3 focus:ring focus:ring-green-300 text-sm sm:text-base"/>
+                        class="w-full border rounded-md p-2 sm:p-3 focus:ring focus:ring-green-300 text-sm sm:text-base"/>
                 </div>
 
                 <!-- Divisi -->
