@@ -1,6 +1,4 @@
-@include('script.background')
-@include('script.sidebar')
-@include('script.navbar')
+@include('layout.allinone')
 
 <!-- Main Content with Responsive Layout -->
 <div class="ml-0 sm:ml-56 mt-20 p-2 sm:p-4 lg:p-8 transition-all duration-300">
@@ -97,9 +95,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="mt-8 mx-2 sm:mx-4">
-        <p class="text-[#4B4B5A] font-bold text-xs sm:text-sm">Copyright © 2025 PTMB. All Rights Reserved</p>
-    </div>
+    @include('layout.copyright')
 
 </div>
 </body>

@@ -1,11 +1,9 @@
-@include('script.background')
-@include('script.sidebar')
-@include('script.navbar')
+@include('layout.allinone')
 
 <div class="ml-0 sm:ml-56 mt-20 p-4 sm:p-6 lg:p-8 transition-all duration-300">
 
     <div class="p-2 sm:p-4">
-        <p class="text-[#4B4B5A] font-semibold text-xl sm:text-2xl">Edit Karyawan</p>
+        <p class="text-[#4B4B5A] font-semibold text-xl sm:text-2xl">Detail Daftar Permohonan</p>
 
         <!-- Back Button -->
         <button class="inline-flex items-center justify-center bg-green-400 rounded-full w-8 h-8 sm:w-10 sm:h-10 mt-4">
@@ -26,7 +24,7 @@
 
                 <!-- Informasi Pelanggan & Sambungan -->
                 <div class="bg-white rounded-xl shadow-lg border border-gray-200 p-6 ml-10 lg:p-8">
-                    <h2 class="text-xl font-semibold text-[#3B82F6] mb-6">Informasi Pelanggan</h2>
+                    <h2 class="text-xl font-semibold text-blue-900 mb-6">Informasi Pelanggan</h2>
 
                     <!-- Form Fields -->
                     <div class="space-y-4 mb-8">
@@ -52,7 +50,7 @@
                     </div>
 
                     <!-- Informasi Sambungan -->
-                    <h2 class="text-xl font-semibold text-[#3B82F6] mb-6">Informasi Sambungan</h2>
+                    <h2 class="text-xl font-semibold text-blue-900 mb-6">Informasi Sambungan</h2>
 
                     <div class="space-y-4">
                         <div class="flex justify-between items-center py-2 border-b border-gray-100">
@@ -99,9 +97,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="mt-8">
-        <p class="text-[#4B4B5A] font-bold text-sm">Copyright © 2025 PTMB. All Rights Reserved</p>
-    </div>
+    @include('layout.copyright')
 </div>
 
 <style>
