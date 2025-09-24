@@ -30,8 +30,8 @@ Route::get('/karyawan/edit', function () {
     return view('karyawan/EditKaryawan');
 });
 
-// Pelanggan
+// Pengguna
 
-route::get('/pelanggan', function () {
-    return view('pelanggan/Pelanggan');
+route::get('/pengguna', function () {
+    return view('pengguna/Pengguna');
 });
